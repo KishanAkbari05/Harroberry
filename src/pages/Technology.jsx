@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Technology = () => {
   // Interactive 7-Layer Matrix State Controller

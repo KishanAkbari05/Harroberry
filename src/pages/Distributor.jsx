@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import toast from "react-hot-toast";
+import { Link } from 'react-router-dom';
 
 const Distributor = () => {
   const [formData, setFormData] = useState({
@@ -163,12 +164,12 @@ const Distributor = () => {
 
                   {/* Direct Quick-Inquiry Communication Rails */}
                   <div className="flex flex-col sm:flex-row gap-3 pt-4">
-                      <a href="tel:+919313948854" className="flex items-center justify-center gap-2.5 h-12 px-6 bg-brand-purple hover:bg-brand-purple/90 text-white font-bold text-xs uppercase tracking-wider rounded-xl transition-all shadow-md hover:shadow-lg shadow-purple-500/10 shrink-0">
+                      <Link href="tel:+919313948854" className="flex items-center justify-center gap-2.5 h-12 px-6 bg-brand-purple hover:bg-brand-purple/90 text-white font-bold text-xs uppercase tracking-wider rounded-xl transition-all shadow-md hover:shadow-lg shadow-purple-500/10 shrink-0">
                           <i className="fas fa-phone-alt"></i> Call Distribution Desk
-                      </a>
-                      <a href="https://wa.me/919313948854?text=Hi,%20I'm%20interested%20in%20Harroberry%20Wholesale%20Dealership." target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2.5 h-12 px-6 bg-[#25D366] hover:bg-[#20ba59] text-white font-bold text-xs uppercase tracking-wider rounded-xl transition-all shadow-md hover:shadow-lg shadow-emerald-500/10 shrink-0">
+                      </Link>
+                      <Link href="https://wa.me/919313948854?text=Hi,%20I'm%20interested%20in%20Harroberry%20Wholesale%20Dealership." target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2.5 h-12 px-6 bg-[#25D366] hover:bg-[#20ba59] text-white font-bold text-xs uppercase tracking-wider rounded-xl transition-all shadow-md hover:shadow-lg shadow-emerald-500/10 shrink-0">
                           <i className="fab fa-whatsapp text-sm"></i> WhatsApp Inquiry
-                      </a>
+                      </Link>
                   </div>
               </div>
 

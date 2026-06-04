@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -65,7 +66,7 @@ const Navbar = () => {
           <div id="navbarContainer" className={`max-w-7xl mx-auto flex items-center justify-between px-6 py-2.5 transition-all duration-500 border backdrop-blur-xl ${isScrolled ? 'shadow-[0_20px_50px_rgba(15,23,42,0.08)] dark:shadow-[0_30px_70px_rgba(0,0,0,0.45)] max-w-6xl rounded-full bg-white/70 dark:bg-slate-900/70 border-white/40 dark:border-slate-800/60' : 'rounded-3xl bg-transparent border-transparent'}`}>
               
               {/* BRAND LOGO DESIGN */}
-              <a href="#home" className="flex items-center space-x-3 group relative focus:outline-none" aria-label="Harroberry Home Landing">
+              <Link href="#home" className="flex items-center space-x-3 group relative focus:outline-none" aria-label="Harroberry Home Landing">
                   <div className="relative w-10 h-10 flex items-center justify-center rounded-xl bg-gradient-to-br from-brand-pink to-brand-purple p-[1.5px] transition-all duration-500 group-hover:rotate-[360deg] shadow-md shadow-brand-pink/10">
                       <div className="w-full h-full bg-white dark:bg-slate-950 rounded-[10px] flex items-center justify-center relative overflow-hidden transition-colors duration-300">
                           <div className="absolute -top-3 -left-3 w-8 h-8 bg-brand-pink/20 rounded-full blur-sm group-hover:translate-x-1 group-hover:translate-y-1 transition-transform duration-500"></div>
@@ -87,7 +88,7 @@ const Navbar = () => {
                           Premium Care
                       </span>
                   </div>
-              </a>
+              </Link>
 
               {/* HORIZONTAL DESKTOP LINK TRAY */}
               <div ref={navLinksContainerRef} onMouseLeave={handleLinksMouseLeave} className="hidden md:flex items-center relative bg-slate-100/60 dark:bg-slate-800/40 p-1 rounded-full border border-slate-200/40 dark:border-slate-700/30">
@@ -104,14 +105,14 @@ const Navbar = () => {
                       {['Home', 'Features', 'Products', 'About', 'B2B', 'Contact'].map((label) => {
                           const route = `/${label.toLowerCase() === 'about' ? 'about' : label.toLowerCase() === 'b2b' ? 'distributor' : label.toLowerCase()}`;
                           return (
-                              <a 
+                              <Link 
                                 key={label}
                                 href={route} 
                                 onMouseEnter={handleLinkMouseEnter} 
                                 className="px-4 py-1.5 text-[11px] font-bold uppercase tracking-wider text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors duration-200"
                               >
                                   {label}
-                              </a>
+                              </Link>
                           );
                       })}
                   </div>
@@ -131,9 +132,9 @@ const Navbar = () => {
                       </div>
                   </button>
 
-                  <a href="/contact" className="hidden sm:inline-flex px-5 h-9 items-center text-[11px] font-black uppercase tracking-widest text-white bg-gradient-to-r from-brand-pink to-brand-purple rounded-full shadow-md shadow-brand-pink/10 hover:shadow-lg hover:shadow-brand-pink/20 hover:scale-[1.03] active:scale-95 transition-all duration-300">
+                  <Link href="/contact" className="hidden sm:inline-flex px-5 h-9 items-center text-[11px] font-black uppercase tracking-widest text-white bg-gradient-to-r from-brand-pink to-brand-purple rounded-full shadow-md shadow-brand-pink/10 hover:shadow-lg hover:shadow-brand-pink/20 hover:scale-[1.03] active:scale-95 transition-all duration-300">
                       Inquire
-                  </a>
+                  </Link>
                   
                   {/* HAMBURGER TRIGGER */}
                   <button onClick={() => setIsSidebarOpen(true)} id="menuToggle" className="md:hidden w-9 h-9 flex flex-col items-center justify-center space-y-1 rounded-xl bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-200 focus:outline-none transition-all duration-300 hover:scale-105 border border-slate-200/30 dark:border-slate-700/30">
@@ -169,7 +170,7 @@ const Navbar = () => {
                       { h: "/wholesale", i: "fa-handshake", l: "B2B Wholesale" },
                       { h: "/contact", i: "fa-envelope", l: "Contact Deck" }
                   ].map((link, idx) => (
-                      <a 
+                      <Link 
                         key={idx}
                         href={link.h} 
                         onClick={() => setIsSidebarOpen(false)} 
@@ -177,15 +178,15 @@ const Navbar = () => {
                       >
                           <i className={`fas ${link.i} text-[11px] w-4 text-slate-400 dark:text-slate-500`}></i> 
                           <span>{link.l}</span>
-                      </a>
+                      </Link>
                   ))}
               </div>
           </div>
 
           <div className="pt-5 border-t border-slate-100 dark:border-slate-800/60 flex flex-col space-y-3 items-center">
-              <a href="/contact" onClick={() => setIsSidebarOpen(false)} className="w-full flex items-center justify-center h-11 text-xs font-bold uppercase tracking-widest text-white bg-gradient-to-r from-brand-pink to-brand-purple rounded-xl shadow-md shadow-brand-pink/10">
+              <Link href="/contact" onClick={() => setIsSidebarOpen(false)} className="w-full flex items-center justify-center h-11 text-xs font-bold uppercase tracking-widest text-white bg-gradient-to-r from-brand-pink to-brand-purple rounded-xl shadow-md shadow-brand-pink/10">
                   Secure Inquiry
-              </a>
+              </Link>
               <p className="text-[10px] font-semibold text-slate-400 tracking-wide">© 2026 Harroberry Healthcare Inc.</p>
           </div>
       </div>

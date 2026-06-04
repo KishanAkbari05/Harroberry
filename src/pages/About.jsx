@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const About = () => {
   const [openFaq, setOpenFaq] = useState(null);
@@ -249,9 +250,9 @@ const About = () => {
                               </div>
                           </div>
                           
-                          <a href="/products" class="w-full mt-8 h-12 flex items-center justify-center bg-slate-50 hover:bg-brand-pink/5 dark:bg-slate-950 dark:hover:bg-brand-pink/10 text-slate-800 dark:text-slate-200 font-black rounded-xl text-xs uppercase tracking-widest border border-slate-200/60 dark:border-slate-800/80 transition-all shadow-sm active:scale-95">
+                          <Link href="/products" class="w-full mt-8 h-12 flex items-center justify-center bg-slate-50 hover:bg-brand-pink/5 dark:bg-slate-950 dark:hover:bg-brand-pink/10 text-slate-800 dark:text-slate-200 font-black rounded-xl text-xs uppercase tracking-widest border border-slate-200/60 dark:border-slate-800/80 transition-all shadow-sm active:scale-95">
                               Select XL Dimensions
-                          </a>
+                          </Link>
                       </div>
                   </div>
 
@@ -290,9 +291,9 @@ const About = () => {
                               </div>
                           </div>
                           
-                          <a href="/products" class="w-full mt-8 h-12 flex items-center justify-center bg-slate-50 hover:bg-brand-purple/5 dark:bg-slate-950 dark:hover:bg-brand-purple/10 text-slate-800 dark:text-slate-200 font-black rounded-xl text-xs uppercase tracking-widest border border-slate-200/60 dark:border-slate-800/80 transition-all shadow-sm active:scale-95">
+                          <Link href="/products" class="w-full mt-8 h-12 flex items-center justify-center bg-slate-50 hover:bg-brand-purple/5 dark:bg-slate-950 dark:hover:bg-brand-purple/10 text-slate-800 dark:text-slate-200 font-black rounded-xl text-xs uppercase tracking-widest border border-slate-200/60 dark:border-slate-800/80 transition-all shadow-sm active:scale-95">
                               Select XXL Dimensions
-                          </a>
+                          </Link>
                       </div>
                   </div>
               </div>

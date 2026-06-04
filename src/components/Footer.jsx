@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -44,9 +45,9 @@ const Footer = () => {
                         Harroberry operates at the intersection of modern bio-engineering and safe feminine hygiene management frameworks customized for Indian climates.
                     </p>
                     <div class="flex space-x-3.5 pt-2">
-                        <a href="https://wa.me/919313948854" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-slate-900 hover:bg-emerald-500 text-slate-400 hover:text-white flex items-center justify-center transition-all duration-300 transform hover:-translate-y-1 shadow-md border border-slate-800/80 text-base" aria-label="WhatsApp Corporate Desk"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#" class="w-10 h-10 rounded-xl bg-slate-900 hover:bg-gradient-to-tr hover:from-amber-500 hover:via-pink-500 hover:to-purple-600 text-slate-400 hover:text-white flex items-center justify-center transition-all duration-300 transform hover:-translate-y-1 shadow-md border border-slate-800/80 text-base" aria-label="Instagram Profile"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="w-10 h-10 rounded-xl bg-slate-900 hover:bg-blue-600 text-slate-400 hover:text-white flex items-center justify-center transition-all duration-300 transform hover:-translate-y-1 shadow-md border border-slate-800/80 text-base" aria-label="Facebook Page"><i class="fab fa-facebook-f"></i></a>
+                        <Link href="https://wa.me/919313948854" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-slate-900 hover:bg-emerald-500 text-slate-400 hover:text-white flex items-center justify-center transition-all duration-300 transform hover:-translate-y-1 shadow-md border border-slate-800/80 text-base" aria-label="WhatsApp Corporate Desk"><i class="fab fa-whatsapp"></i></Link>
+                        <Link href="#" class="w-10 h-10 rounded-xl bg-slate-900 hover:bg-gradient-to-tr hover:from-amber-500 hover:via-pink-500 hover:to-purple-600 text-slate-400 hover:text-white flex items-center justify-center transition-all duration-300 transform hover:-translate-y-1 shadow-md border border-slate-800/80 text-base" aria-label="Instagram Profile"><i class="fab fa-instagram"></i></Link>
+                        <Link href="#" class="w-10 h-10 rounded-xl bg-slate-900 hover:bg-blue-600 text-slate-400 hover:text-white flex items-center justify-center transition-all duration-300 transform hover:-translate-y-1 shadow-md border border-slate-800/80 text-base" aria-label="Facebook Page"><i class="fab fa-facebook-f"></i></Link>
                     </div>
                 </div>
 
@@ -55,10 +56,10 @@ const Footer = () => {
                         <span class="w-2 h-2 rounded-full bg-brand-purple"></span> Navigation
                     </h4>
                     <ul class="space-y-3.5 text-sm md:text-base font-semibold">
-                        <li><a href="#home" class="group flex items-center text-slate-400 hover:text-white transition-colors duration-300"><i class="fas fa-chevron-right text-[10px] mr-0 opacity-0 group-hover:mr-2.5 group-hover:opacity-100 transition-all text-brand-pink"></i>Home Landing</a></li>
-                        <li><a href="#features" class="group flex items-center text-slate-400 hover:text-white transition-colors duration-300"><i class="fas fa-chevron-right text-[10px] mr-0 opacity-0 group-hover:mr-2.5 group-hover:opacity-100 transition-all text-brand-pink"></i>Core Features</a></li>
-                        <li><a href="#products" class="group flex items-center text-slate-400 hover:text-white transition-colors duration-300"><i class="fas fa-chevron-right text-[10px] mr-0 opacity-0 group-hover:mr-2.5 group-hover:opacity-100 transition-all text-brand-pink"></i>Product Matrix</a></li>
-                        <li><a href="#about" class="group flex items-center text-slate-400 hover:text-white transition-colors duration-300"><i class="fas fa-chevron-right text-[10px] mr-0 opacity-0 group-hover:mr-2.5 group-hover:opacity-100 transition-all text-brand-pink"></i>Corporate Ethos</a></li>
+                        <li><Link href="#home" class="group flex items-center text-slate-400 hover:text-white transition-colors duration-300"><i class="fas fa-chevron-right text-[10px] mr-0 opacity-0 group-hover:mr-2.5 group-hover:opacity-100 transition-all text-brand-pink"></i>Home Landing</Link></li>
+                        <li><Link href="#features" class="group flex items-center text-slate-400 hover:text-white transition-colors duration-300"><i class="fas fa-chevron-right text-[10px] mr-0 opacity-0 group-hover:mr-2.5 group-hover:opacity-100 transition-all text-brand-pink"></i>Core Features</Link></li>
+                        <li><Link href="#products" class="group flex items-center text-slate-400 hover:text-white transition-colors duration-300"><i class="fas fa-chevron-right text-[10px] mr-0 opacity-0 group-hover:mr-2.5 group-hover:opacity-100 transition-all text-brand-pink"></i>Product Matrix</Link></li>
+                        <li><Link href="#about" class="group flex items-center text-slate-400 hover:text-white transition-colors duration-300"><i class="fas fa-chevron-right text-[10px] mr-0 opacity-0 group-hover:mr-2.5 group-hover:opacity-100 transition-all text-brand-pink"></i>Corporate Ethos</Link></li>
                     </ul>
                 </div>
 
@@ -67,9 +68,9 @@ const Footer = () => {
                         <span class="w-2 h-2 rounded-full bg-violet-500"></span> Product Line
                     </h4>
                     <ul class="space-y-3.5 text-sm md:text-base font-semibold">
-                        <li><a href="#products" class="group flex items-center text-slate-400 hover:text-white transition-colors duration-300"><i class="fas fa-cube text-xs mr-2.5 text-slate-700 group-hover:text-brand-pink transition-colors"></i>Harroberry Day XL</a></li>
-                        <li><a href="#products" class="group flex items-center text-slate-400 hover:text-white transition-colors duration-300"><i class="fas fa-moon text-xs mr-2.5 text-slate-700 group-hover:text-brand-purple transition-colors"></i>Heavy Overnight XXL</a></li>
-                        <li><a href="#wholesale" class="group flex items-center text-slate-400 hover:text-white transition-colors duration-300"><i class="fas fa-handshake text-xs mr-2.5 text-slate-700 group-hover:text-violet-400 transition-colors"></i>B2B Bulk Packages</a></li>
+                        <li><Link href="#products" class="group flex items-center text-slate-400 hover:text-white transition-colors duration-300"><i class="fas fa-cube text-xs mr-2.5 text-slate-700 group-hover:text-brand-pink transition-colors"></i>Harroberry Day XL</Link></li>
+                        <li><Link href="#products" class="group flex items-center text-slate-400 hover:text-white transition-colors duration-300"><i class="fas fa-moon text-xs mr-2.5 text-slate-700 group-hover:text-brand-purple transition-colors"></i>Heavy Overnight XXL</Link></li>
+                        <li><Link href="#wholesale" class="group flex items-center text-slate-400 hover:text-white transition-colors duration-300"><i class="fas fa-handshake text-xs mr-2.5 text-slate-700 group-hover:text-violet-400 transition-colors"></i>B2B Bulk Packages</Link></li>
                     </ul>
                 </div>
 
@@ -84,11 +85,11 @@ const Footer = () => {
                         </div>
                         <div class="flex items-center space-x-3.5">
                             <i class="fas fa-phone text-brand-purple text-sm w-4"></i>
-                            <a href="tel:+919313948854" class="text-sm text-slate-300 hover:text-white transition-colors font-bold">+91 9313948854</a>
+                            <Link href="tel:+919313948854" class="text-sm text-slate-300 hover:text-white transition-colors font-bold">+91 9313948854</Link>
                         </div>
                         <div class="flex items-center space-x-3.5">
                             <i class="fas fa-envelope text-emerald-500 text-sm w-4"></i>
-                            <a href="mailto:harroberry18@gmail.com" class="text-sm text-slate-300 hover:text-white transition-colors font-semibold overflow-hidden text-ellipsis whitespace-nowrap block max-w-[190px]">harroberry18@gmail.com</a>
+                            <Link href="mailto:harroberry18@gmail.com" class="text-sm text-slate-300 hover:text-white transition-colors font-semibold overflow-hidden text-ellipsis whitespace-nowrap block max-w-[190px]">harroberry18@gmail.com</Link>
                         </div>
                     </div>
                 </div>

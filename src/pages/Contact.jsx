@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import toast from "react-hot-toast";
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
   const [formState, setFormState] = useState({
@@ -163,12 +164,12 @@ const Contact = () => {
                       <div className="space-y-3 px-3">
                           <p className="text-xs font-semibold uppercase tracking-wider text-slate-400">Digital Communities</p>
                           <div className="flex space-x-4">
-                              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gradient-to-tr from-amber-500 via-pink-500 to-purple-600 text-white flex items-center justify-center hover:scale-105 hover:shadow-lg transition-all">
+                              <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gradient-to-tr from-amber-500 via-pink-500 to-purple-600 text-white flex items-center justify-center hover:scale-105 hover:shadow-lg transition-all">
                                   <i className="fab fa-instagram"></i>
-                              </a>
-                              <a href="#" className="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center hover:scale-105 hover:shadow-lg transition-all">
+                              </Link>
+                              <Link href="#" className="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center hover:scale-105 hover:shadow-lg transition-all">
                                   <i className="fab fa-facebook-f"></i>
-                              </a>
+                              </Link>
                           </div>
                       </div>
 
@@ -438,7 +439,7 @@ const Contact = () => {
                       </div>
                       
                       <div className="lg:col-span-7 flex flex-col gap-3.5 w-full">
-                          <a href="mailto:harroberry18@gmail.com" 
+                          <Link href="mailto:harroberry18@gmail.com" 
                              className="group flex items-center justify-between p-4 rounded-xl border border-slate-200 dark:border-slate-800/80 hover:border-pink-500/40 dark:hover:border-pink-500/30 hover:bg-white dark:hover:bg-slate-900/30 transition-all duration-300 shadow-sm hover:shadow-md dark:shadow-none">
                               <div className="flex items-center space-x-4">
                                   <div className="w-10 h-10 rounded-lg border border-pink-100 bg-pink-50/50 text-pink-600 dark:border-pink-500/20 dark:bg-pink-500/5 dark:text-pink-400 flex items-center justify-center text-sm transition-all duration-300 group-hover:scale-105">
@@ -452,9 +453,9 @@ const Contact = () => {
                               <div className="w-6 h-6 rounded-md bg-slate-50 dark:bg-white/5 flex items-center justify-center text-slate-400 group-hover:text-pink-500 group-hover:bg-pink-500/10 dark:group-hover:bg-pink-500/20 transition-all duration-300">
                                   <i className="fas fa-chevron-right text-[10px] transition-transform duration-300 group-hover:translate-x-0.5"></i>
                               </div>
-                          </a>
+                          </Link>
 
-                          <a href="tel:+919313948865" 
+                          <Link href="tel:+919313948865" 
                              className="group flex items-center justify-between p-4 rounded-xl border border-slate-200 dark:border-slate-800/80 hover:border-purple-500/40 dark:hover:border-purple-500/30 hover:bg-white dark:hover:bg-slate-900/30 transition-all duration-300 shadow-sm hover:shadow-md dark:shadow-none">
                               <div className="flex items-center space-x-4">
                                   <div className="w-10 h-10 rounded-lg border border-purple-100 bg-purple-50/50 text-purple-600 dark:border-purple-500/20 dark:bg-purple-500/5 dark:text-purple-400 flex items-center justify-center text-sm transition-all duration-300 group-hover:scale-105">
@@ -468,9 +469,9 @@ const Contact = () => {
                               <div className="w-6 h-6 rounded-md bg-slate-50 dark:bg-white/5 flex items-center justify-center text-slate-400 group-hover:text-purple-500 group-hover:bg-purple-500/10 dark:group-hover:bg-purple-500/20 transition-all duration-300">
                                   <i className="fas fa-chevron-right text-[10px] transition-transform duration-300 group-hover:translate-x-0.5"></i>
                               </div>
-                          </a>
+                          </Link>
 
-                          <a href="tel:+916303219091" 
+                          <Link href="tel:+916303219091" 
                              className="group flex items-center justify-between p-4 rounded-xl border border-slate-200 dark:border-slate-800/80 hover:border-emerald-500/40 dark:hover:border-emerald-500/30 hover:bg-white dark:hover:bg-slate-900/30 transition-all duration-300 shadow-sm hover:shadow-md dark:shadow-none">
                               <div className="flex items-center space-x-4">
                                   <div className="w-10 h-10 rounded-lg border border-emerald-100 bg-emerald-50/50 text-emerald-600 dark:border-emerald-500/20 dark:bg-emerald-500/5 dark:text-emerald-400 flex items-center justify-center text-sm transition-all duration-300 group-hover:scale-105">
@@ -484,7 +485,7 @@ const Contact = () => {
                               <div className="w-6 h-6 rounded-md bg-slate-50 dark:bg-white/5 flex items-center justify-center text-slate-400 group-hover:text-emerald-500 group-hover:bg-emerald-500/10 dark:group-hover:bg-emerald-500/20 transition-all duration-300">
                                   <i className="fas fa-chevron-right text-[10px] transition-transform duration-300 group-hover:translate-x-0.5"></i>
                               </div>
-                          </a>
+                          </Link>
                       </div>
                   </div>
               </div>
