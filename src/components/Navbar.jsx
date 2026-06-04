@@ -66,7 +66,7 @@ const Navbar = () => {
           <div id="navbarContainer" className={`max-w-7xl mx-auto flex items-center justify-between px-6 py-2.5 transition-all duration-500 border backdrop-blur-xl ${isScrolled ? 'shadow-[0_20px_50px_rgba(15,23,42,0.08)] dark:shadow-[0_30px_70px_rgba(0,0,0,0.45)] max-w-6xl rounded-full bg-white/70 dark:bg-slate-900/70 border-white/40 dark:border-slate-800/60' : 'rounded-3xl bg-transparent border-transparent'}`}>
               
               {/* BRAND LOGO DESIGN */}
-              <Link to="#home" className="flex items-center space-x-3 group relative focus:outline-none" aria-label="Harroberry Home Landing">
+              <Link to="/home" className="flex items-center space-x-3 group relative focus:outline-none" aria-label="Harroberry Home Landing">
                   <div className="relative w-10 h-10 flex items-center justify-center rounded-xl bg-gradient-to-br from-brand-pink to-brand-purple p-[1.5px] transition-all duration-500 group-hover:rotate-[360deg] shadow-md shadow-brand-pink/10">
                       <div className="w-full h-full bg-white dark:bg-slate-950 rounded-[10px] flex items-center justify-center relative overflow-hidden transition-colors duration-300">
                           <div className="absolute -top-3 -left-3 w-8 h-8 bg-brand-pink/20 rounded-full blur-sm group-hover:translate-x-1 group-hover:translate-y-1 transition-transform duration-500"></div>
@@ -167,7 +167,7 @@ const Navbar = () => {
                       { h: "/features", i: "fa-cube", l: "Features" },
                       { h: "/products", i: "fa-layer-group", l: "Products" },
                       { h: "/about", i: "fa-info-circle", l: "About Us" },
-                      { h: "/wholesale", i: "fa-handshake", l: "B2B Wholesale" },
+                      { h: "/distributor", i: "fa-handshake", l: "B2B Wholesale" },
                       { h: "/contact", i: "fa-envelope", l: "Contact Deck" }
                   ].map((link, idx) => (
                       <Link 
