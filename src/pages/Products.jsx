@@ -148,7 +148,7 @@ const Products = () => {
                               <button onClick={() => openQuickView('xl')} className="w-1/2 py-3.5 bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 text-slate-800 dark:text-white font-bold rounded-xl text-xs uppercase tracking-wider transition-colors">
                                   View Details
                               </button>
-                              <Link href="https://wa.me/919313948854?text=Hi,%20I%20want%20to%20order%20Harroberry%20XL%20Pads." target="_blank" rel="noopener noreferrer" className="w-1/2 text-center py-3.5 bg-brand-pink hover:bg-brand-pink/90 text-white font-bold rounded-xl text-xs uppercase tracking-wider shadow-lg shadow-brand-pink/20 transition-all transform active:scale-95">
+                              <Link to="https://wa.me/919313948854?text=Hi,%20I%20want%20to%20order%20Harroberry%20XL%20Pads." target="_blank" rel="noopener noreferrer" className="w-1/2 text-center py-3.5 bg-brand-pink hover:bg-brand-pink/90 text-white font-bold rounded-xl text-xs uppercase tracking-wider shadow-lg shadow-brand-pink/20 transition-all transform active:scale-95">
                                   Order Now
                               </Link>
                           </div>
@@ -201,7 +201,7 @@ const Products = () => {
                               <button onClick={() => openQuickView('xxl')} className="w-1/2 py-3.5 bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 text-slate-800 dark:text-white font-bold rounded-xl text-xs uppercase tracking-wider transition-colors">
                                   View Details
                               </button>
-                              <Link href="https://wa.me/919313948854?text=Hi,%20I%20want%20to%20order%20Harroberry%20XXL%20Pads." target="_blank" rel="noopener noreferrer" className="w-1/2 text-center py-3.5 bg-brand-purple hover:bg-brand-purple/90 text-white font-bold rounded-xl text-xs uppercase tracking-wider shadow-lg shadow-brand-purple/20 transition-all transform active:scale-95">
+                              <Link to="https://wa.me/919313948854?text=Hi,%20I%20want%20to%20order%20Harroberry%20XXL%20Pads." target="_blank" rel="noopener noreferrer" className="w-1/2 text-center py-3.5 bg-brand-purple hover:bg-brand-purple/90 text-white font-bold rounded-xl text-xs uppercase tracking-wider shadow-lg shadow-brand-purple/20 transition-all transform active:scale-95">
                                   Order Now
                               </Link>
                           </div>
@@ -489,7 +489,7 @@ const Products = () => {
                                         <span className="text-xs font-black text-slate-800 dark:text-slate-200">Instant Dispatch • Rajkot Production Hub</span>
                                     </div>
                                 </div>
-                                <Link href={selectedProduct.waLink} target="_blank" rel="noopener noreferrer" className="w-full md:w-auto flex items-center justify-center gap-3 bg-[#25D366] hover:bg-[#1ebe5d] text-white font-semibold text-sm px-8 h-[54px] rounded-xl whitespace-nowrap shadow-lg transition-all duration-300">
+                                <Link to={selectedProduct.waLink} target="_blank" rel="noopener noreferrer" className="w-full md:w-auto flex items-center justify-center gap-3 bg-[#25D366] hover:bg-[#1ebe5d] text-white font-semibold text-sm px-8 h-[54px] rounded-xl whitespace-nowrap shadow-lg transition-all duration-300">
                                     <i className="fab fa-whatsapp text-lg"></i>
                                     <span>Order on WhatsApp</span>
                                 </Link>

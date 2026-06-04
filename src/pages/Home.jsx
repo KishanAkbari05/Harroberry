@@ -185,10 +185,10 @@ const Home = () => {
               Comfortable, cotton-soft sanitary pads designed with advanced multi-layer leak protection and holistic hygienic safety. Feel secure all day.
             </p>
             <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
-              <Link href="/products" className="px-8 py-3.5 bg-gradient-to-r from-brand-pink to-brand-purple text-white font-semibold rounded-full shadow-lg shadow-brand-pink/20 hover:opacity-90 transform hover:-translate-y-0.5 transition-all duration-200 text-center">
+              <Link to="/products" className="px-8 py-3.5 bg-gradient-to-r from-brand-pink to-brand-purple text-white font-semibold rounded-full shadow-lg shadow-brand-pink/20 hover:opacity-90 transform hover:-translate-y-0.5 transition-all duration-200 text-center">
                 Shop Now
               </Link>
-              <Link href="/distributor" className="px-8 py-3.5 bg-white dark:bg-slate-800 text-slate-800 dark:text-white border border-slate-200 dark:border-slate-700 font-semibold rounded-full shadow-sm hover:bg-slate-50 dark:hover:bg-slate-700 transform hover:-translate-y-0.5 transition-all duration-200 text-center">
+              <Link to="/distributor" className="px-8 py-3.5 bg-white dark:bg-slate-800 text-slate-800 dark:text-white border border-slate-200 dark:border-slate-700 font-semibold rounded-full shadow-sm hover:bg-slate-50 dark:hover:bg-slate-700 transform hover:-translate-y-0.5 transition-all duration-200 text-center">
                 Become Distributor
               </Link>
             </div>
@@ -317,11 +317,11 @@ const Home = () => {
                 </div>
                 
                 <div className="p-6 bg-slate-50/50 dark:bg-slate-950/40 border-t border-slate-100 dark:border-slate-800/80 grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  <Link href="https://www.amazon.in/Harroberry-Sanitary-Protection-Cottony-Technology/dp/B0H347BD89/ref=sr_1_5?..." target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3 h-12 px-5 bg-[#131921] hover:bg-[#232f3e] text-white rounded-xl font-bold text-xs uppercase tracking-wider transition-all duration-200 group/btn shadow-md">
+                  <Link to="https://www.amazon.in/Harroberry-Sanitary-Protection-Cottony-Technology/dp/B0H347BD89/ref=sr_1_5?..." target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3 h-12 px-5 bg-[#131921] hover:bg-[#232f3e] text-white rounded-xl font-bold text-xs uppercase tracking-wider transition-all duration-200 group/btn shadow-md">
                     <i className="fab fa-amazon text-base text-[#ff9900]"></i> Amazon Store
                     <i className="fas fa-arrow-right text-[10px] text-slate-400 group-hover/btn:translate-x-1 transition-transform ml-auto"></i>
                   </Link>
-                  <Link href="https://www.meesho.com/harroberry-xl-sanitary-pads-for-women-40-pads-secure-nights-protection-..." target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3 h-12 px-5 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-700/60 rounded-xl font-bold text-xs uppercase tracking-wider transition-all duration-200 group/btn shadow-sm">
+                  <Link to="https://www.meesho.com/harroberry-xl-sanitary-pads-for-women-40-pads-secure-nights-protection-..." target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3 h-12 px-5 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-700/60 rounded-xl font-bold text-xs uppercase tracking-wider transition-all duration-200 group/btn shadow-sm">
                     <i className="fas fa-shopping-bag text-sm text-pink-500"></i> Meesho Channel
                     <i className="fas fa-arrow-right text-[10px] text-slate-400 group-hover/btn:translate-x-1 transition-transform ml-auto"></i>
                   </Link>
@@ -343,11 +343,11 @@ const Home = () => {
                 </div>
                 
                 <div className="p-6 bg-slate-50/50 dark:bg-slate-950/40 border-t border-slate-100 dark:border-slate-800/80 grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  <Link href="https://www.amazon.in/Harroberry-Sanitary-Protection-Cottony-Technology/dp/B0H341LSZL/ref=sr_1_11?..." target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3 h-12 px-5 bg-[#131921] hover:bg-[#232f3e] text-white rounded-xl font-bold text-xs uppercase tracking-wider transition-all duration-200 group/btn shadow-md">
+                  <Link to="https://www.amazon.in/Harroberry-Sanitary-Protection-Cottony-Technology/dp/B0H341LSZL/ref=sr_1_11?..." target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3 h-12 px-5 bg-[#131921] hover:bg-[#232f3e] text-white rounded-xl font-bold text-xs uppercase tracking-wider transition-all duration-200 group/btn shadow-md">
                     <i className="fab fa-amazon text-base text-[#ff9900]"></i> Amazon Store
                     <i className="fas fa-arrow-right text-[10px] text-slate-400 group-hover/btn:translate-x-1 transition-transform ml-auto"></i>
                   </Link>
-                  <Link href="https://www.meesho.com/harroberry-xxl-sanitary-pads-for-women-40-pads-secure-nights-protection-..." target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3 h-12 px-5 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-700/60 rounded-xl font-bold text-xs uppercase tracking-wider transition-all duration-200 group/btn shadow-sm">
+                  <Link to="https://www.meesho.com/harroberry-xxl-sanitary-pads-for-women-40-pads-secure-nights-protection-..." target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3 h-12 px-5 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-700/60 rounded-xl font-bold text-xs uppercase tracking-wider transition-all duration-200 group/btn shadow-sm">
                     <i className="fas fa-shopping-bag text-sm text-pink-500"></i> Meesho Channel
                     <i className="fas fa-arrow-right text-[10px] text-slate-400 group-hover/btn:translate-x-1 transition-transform ml-auto"></i>
                   </Link>

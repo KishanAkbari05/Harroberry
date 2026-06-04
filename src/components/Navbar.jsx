@@ -66,7 +66,7 @@ const Navbar = () => {
           <div id="navbarContainer" className={`max-w-7xl mx-auto flex items-center justify-between px-6 py-2.5 transition-all duration-500 border backdrop-blur-xl ${isScrolled ? 'shadow-[0_20px_50px_rgba(15,23,42,0.08)] dark:shadow-[0_30px_70px_rgba(0,0,0,0.45)] max-w-6xl rounded-full bg-white/70 dark:bg-slate-900/70 border-white/40 dark:border-slate-800/60' : 'rounded-3xl bg-transparent border-transparent'}`}>
               
               {/* BRAND LOGO DESIGN */}
-              <Link href="#home" className="flex items-center space-x-3 group relative focus:outline-none" aria-label="Harroberry Home Landing">
+              <Link to="#home" className="flex items-center space-x-3 group relative focus:outline-none" aria-label="Harroberry Home Landing">
                   <div className="relative w-10 h-10 flex items-center justify-center rounded-xl bg-gradient-to-br from-brand-pink to-brand-purple p-[1.5px] transition-all duration-500 group-hover:rotate-[360deg] shadow-md shadow-brand-pink/10">
                       <div className="w-full h-full bg-white dark:bg-slate-950 rounded-[10px] flex items-center justify-center relative overflow-hidden transition-colors duration-300">
                           <div className="absolute -top-3 -left-3 w-8 h-8 bg-brand-pink/20 rounded-full blur-sm group-hover:translate-x-1 group-hover:translate-y-1 transition-transform duration-500"></div>
@@ -107,7 +107,7 @@ const Navbar = () => {
                           return (
                               <Link 
                                 key={label}
-                                href={route} 
+                                to={route} 
                                 onMouseEnter={handleLinkMouseEnter} 
                                 className="px-4 py-1.5 text-[11px] font-bold uppercase tracking-wider text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors duration-200"
                               >
@@ -132,7 +132,7 @@ const Navbar = () => {
                       </div>
                   </button>
 
-                  <Link href="/contact" className="hidden sm:inline-flex px-5 h-9 items-center text-[11px] font-black uppercase tracking-widest text-white bg-gradient-to-r from-brand-pink to-brand-purple rounded-full shadow-md shadow-brand-pink/10 hover:shadow-lg hover:shadow-brand-pink/20 hover:scale-[1.03] active:scale-95 transition-all duration-300">
+                  <Link to="/contact" className="hidden sm:inline-flex px-5 h-9 items-center text-[11px] font-black uppercase tracking-widest text-white bg-gradient-to-r from-brand-pink to-brand-purple rounded-full shadow-md shadow-brand-pink/10 hover:shadow-lg hover:shadow-brand-pink/20 hover:scale-[1.03] active:scale-95 transition-all duration-300">
                       Inquire
                   </Link>
                   
@@ -172,7 +172,7 @@ const Navbar = () => {
                   ].map((link, idx) => (
                       <Link 
                         key={idx}
-                        href={link.h} 
+                        to={link.h} 
                         onClick={() => setIsSidebarOpen(false)} 
                         className="mobile-link flex items-center space-x-3.5 px-4 h-11 rounded-xl text-slate-600 dark:text-slate-300 hover:bg-gradient-to-r hover:from-brand-pink/5 hover:to-brand-purple/5 hover:text-brand-pink dark:hover:bg-slate-800/50 transition-all font-bold text-xs uppercase tracking-wider border border-transparent hover:border-slate-100 dark:hover:border-slate-800/40"
                       >
@@ -184,7 +184,7 @@ const Navbar = () => {
           </div>
 
           <div className="pt-5 border-t border-slate-100 dark:border-slate-800/60 flex flex-col space-y-3 items-center">
-              <Link href="/contact" onClick={() => setIsSidebarOpen(false)} className="w-full flex items-center justify-center h-11 text-xs font-bold uppercase tracking-widest text-white bg-gradient-to-r from-brand-pink to-brand-purple rounded-xl shadow-md shadow-brand-pink/10">
+              <Link to="/contact" onClick={() => setIsSidebarOpen(false)} className="w-full flex items-center justify-center h-11 text-xs font-bold uppercase tracking-widest text-white bg-gradient-to-r from-brand-pink to-brand-purple rounded-xl shadow-md shadow-brand-pink/10">
                   Secure Inquiry
               </Link>
               <p className="text-[10px] font-semibold text-slate-400 tracking-wide">© 2026 Harroberry Healthcare Inc.</p>
