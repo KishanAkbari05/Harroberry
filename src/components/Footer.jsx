@@ -86,7 +86,7 @@ const Footer = () => {
               </Link>
               
               <Link 
-                to="#" 
+                to="https://instagram.com/harroberryofficial" 
                 className="w-10 h-10 rounded-xl bg-slate-900 hover:bg-gradient-to-tr hover:from-amber-500 hover:via-pink-500 hover:to-purple-600 text-slate-400 hover:text-white flex items-center justify-center transition-all duration-300 transform hover:-translate-y-1 shadow-md border border-slate-800/80 text-base" 
                 aria-label="Instagram Profile"
               >
